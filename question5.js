@@ -20,6 +20,6 @@ const users = await User.findAll();
 res.json(users);
 });
 
-sequelize.sync().then(() => {
-app.listen(7000, () => console.log('Server running on port 7000'));
-});
+    sequelize.sync().then(() => {
+    app.listen(7000, () => console.log('Server running on port 7000'));
+    });
